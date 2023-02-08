@@ -14,8 +14,7 @@ const ThankYou = () => {
   const [allUserData, setAllUserData] = useState();
   const userDetail = useSelector((state) => state.user.userDetail);
   const addressDetail = useSelector((state) => state.user.addressDetails);
-  // console.log('---------- userDetail -----------', userDetail);
-  // console.log('------------- addressDetail ------------', addressDetail);
+
 
   useEffect(() => {
     const userDetails = {
@@ -24,8 +23,6 @@ const ThankYou = () => {
     };
     setAllUserData(userDetails);
   }, []);
-
-  console.log("----------- allUserData ------------", allUserData);
 
   function createData(name, value) {
     return { name, value };

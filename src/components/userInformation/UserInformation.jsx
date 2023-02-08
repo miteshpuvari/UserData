@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import {
@@ -10,7 +10,6 @@ import {
   OutlinedInput,
   Radio,
   RadioGroup,
-  Typography,
 } from "@mui/material";
 import { useFormik } from "formik";
 import * as yup from "yup";
