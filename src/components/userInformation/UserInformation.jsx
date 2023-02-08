@@ -10,6 +10,7 @@ import {
   OutlinedInput,
   Radio,
   RadioGroup,
+  
 } from "@mui/material";
 import { useFormik } from "formik";
 import * as yup from "yup";
@@ -85,7 +86,7 @@ const UserInformation = () => {
                 formik.errors.firstName && formik.touched.firstName
               )}
             />
-            {!!formik.errors.firstName && (
+            {!!formik.errors.firstName && formik.touched.firstName && (
               <FormHelperText sx={{ml:1}} error id="firstName">
                 {formik.errors.firstName}
               </FormHelperText>
@@ -100,7 +101,7 @@ const UserInformation = () => {
               value={formik.values.lastName}
               error={Boolean(formik.errors.lastName && formik.touched.lastName)}
             />
-            {!!formik.errors.lastName && (
+            {!!formik.errors.lastName && formik.touched.firstName && (
               <FormHelperText sx={{ml:1}} error id="firstName">
                 {formik.errors.lastName}
               </FormHelperText>
@@ -115,7 +116,7 @@ const UserInformation = () => {
               value={formik.values.email}
               error={Boolean(formik.errors.email && formik.touched.email)}
             />
-            {!!formik.errors.email && (
+            {!!formik.errors.email && formik.touched.email && (
               <FormHelperText sx={{ml:1}} error id="email">
                 {formik.errors.email}
               </FormHelperText>
@@ -130,7 +131,7 @@ const UserInformation = () => {
               value={formik.values.age}
               error={Boolean(formik.errors.age && formik.touched.age)}
             />
-            {!!formik.errors.age && (
+            {!!formik.errors.age && formik.touched.age && (
               <FormHelperText sx={{ml:1}} error id="age">
                 {formik.errors.age}
               </FormHelperText>
@@ -145,7 +146,7 @@ const UserInformation = () => {
               value={formik.values.height}
               error={Boolean(formik.errors.height && formik.touched.height)}
             />
-            {!!formik.errors.height && (
+            {!!formik.errors.height && formik.touched.height && (
               <FormHelperText sx={{ml:1}} error id="height">
                 {formik.errors.height}
               </FormHelperText>
@@ -170,7 +171,7 @@ const UserInformation = () => {
                   label="Female"
                 />
               </RadioGroup>
-              {!!formik.errors.gender && (
+              {!!formik.errors.gender && formik.touched.gender && (
                 <FormHelperText sx={{ml:1}} error id="gender">
                   {formik.errors.gender}
                 </FormHelperText>
@@ -190,7 +191,7 @@ const UserInformation = () => {
                 formik.errors.middleName && formik.touched.middleName
               )}
             />
-            {!!formik.errors.middleName && (
+            {!!formik.errors.middleName && formik.touched.middleName && (
               <FormHelperText sx={{ml:1}} error id="middleName">
                 {formik.errors.middleName}
               </FormHelperText>
@@ -207,7 +208,7 @@ const UserInformation = () => {
                 formik.errors.mobileNumber && formik.touched.mobileNumber
               )}
             />
-            {!!formik.errors.mobileNumber && (
+            {!!formik.errors.mobileNumber && formik.touched.mobileNumber && (
               <FormHelperText sx={{ml:1}} error id="mobileNumber">
                 {formik.errors.mobileNumber}
               </FormHelperText>
@@ -225,7 +226,7 @@ const UserInformation = () => {
                 formik.errors.birthDate && formik.touched.birthDate
               )}
             />
-            {!!formik.errors.birthDate && (
+            {!!formik.errors.birthDate && formik.touched.birthDate && (
               <FormHelperText sx={{ml:1}} error id="email">
                 {formik.errors.birthDate}
               </FormHelperText>
@@ -251,7 +252,7 @@ const UserInformation = () => {
                 </MenuItem>
               ))}
             </TextField>
-            {!!formik.errors.bloodGroup && (
+            {!!formik.errors.bloodGroup && formik.touched.bloodGroup && (
               <FormHelperText sx={{ml:1}} error id="bloodGroup">
                 {formik.errors.bloodGroup}
               </FormHelperText>
@@ -266,7 +267,7 @@ const UserInformation = () => {
               value={formik.values.weight}
               error={Boolean(formik.errors.weight && formik.touched.weight)}
             />
-            {!!formik.errors.weight && (
+            {!!formik.errors.weight && formik.touched.weight && (
               <FormHelperText sx={{ml:1}} error id="weight">
                 {formik.errors.weight}
               </FormHelperText>
@@ -301,7 +302,7 @@ const UserInformation = () => {
                   label="Widowed"
                 />
               </RadioGroup>
-              {!!formik.errors.maritalStatush && (
+              {!!formik.errors.maritalStatush && formik.touched.maritalStatush && (
                 <FormHelperText sx={{ml:1}} error id="maritalStatush">
                   {formik.errors.maritalStatush}
                 </FormHelperText>

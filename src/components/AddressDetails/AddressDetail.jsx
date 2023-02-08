@@ -90,7 +90,7 @@ const AddressDetails = () => {
                 formik.errors.address1 && formik.touched.address1
               )}
             />
-            {!!formik.errors.address1 && (
+            {!!formik.errors.address1 && formik.touched.address1 && (
               <FormHelperText sx={{ml:1}} error id="address1">
                 {formik.errors.address1}
               </FormHelperText>
@@ -115,7 +115,7 @@ const AddressDetails = () => {
                 </MenuItem>
               ))}
             </TextField>
-            {!!formik.errors.city && (
+            {!!formik.errors.city && formik.touched.city && (
               <FormHelperText sx={{ml:1}} error id="city">
                 {formik.errors.city}
               </FormHelperText>
@@ -140,7 +140,7 @@ const AddressDetails = () => {
                 </MenuItem>
               ))}
             </TextField>
-            {!!formik.errors.country && (
+            {!!formik.errors.country && formik.touched.country && (
               <FormHelperText sx={{ml:1}} error id="country">
                 {formik.errors.country}
               </FormHelperText>
@@ -159,7 +159,7 @@ const AddressDetails = () => {
                 formik.errors.address2 && formik.touched.address2
               )}
             />
-            {!!formik.errors.address2 && (
+            {!!formik.errors.address2 && formik.touched.address2 && (
               <FormHelperText sx={{ml:1}} error id="address2">
                 {formik.errors.address2}
               </FormHelperText>
@@ -185,7 +185,7 @@ const AddressDetails = () => {
               ))}
             </TextField>
             
-            {!!formik.errors.state && (
+            {!!formik.errors.state && formik.touched.state && (
               <FormHelperText sx={{ml:1}} error id="state">
                 {formik.errors.state}
               </FormHelperText>
@@ -202,7 +202,7 @@ const AddressDetails = () => {
                 formik.errors.pinCode && formik.touched.pinCode
               )}
             />
-            {!!formik.errors.pinCode && (
+            {!!formik.errors.pinCode && formik.touched.pinCode && (
               <FormHelperText sx={{ml:1}} error id="pinCode">
                 {formik.errors.pinCode}
               </FormHelperText>

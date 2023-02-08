@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <Container sx={{ p: 5 }}>
       <Box>
-        <Paper>
+        <Paper sx={{ p:2 }}>
           <Box sx={{ width: "100%" }}>
             <Stepper activeStep={stepCounts} alternativeLabel>
               {steps.map((label) => (
